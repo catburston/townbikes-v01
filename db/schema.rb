@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20140814201927) do
   enable_extension "plpgsql"
 
   create_table "bicycles", force: true do |t|
+    t.integer  "user_id"
     t.string   "make"
     t.string   "model"
     t.integer  "size"
@@ -58,11 +59,17 @@ ActiveRecord::Schema.define(version: 20140814201927) do
     t.string   "username"
     t.string   "first_name"
     t.string   "last_name"
-    t.string   "password"
+    t.string   "password_digest"
     t.string   "location"
     t.string   "email_address"
     t.text     "description"
     t.integer  "phone_number"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+    t.string   "confirmation_token"
+    t.boolean  "confirmed",           default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
