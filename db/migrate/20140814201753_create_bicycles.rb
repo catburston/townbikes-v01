@@ -3,7 +3,7 @@ class CreateBicycles < ActiveRecord::Migration
     create_table :bicycles do |t|
       t.integer   :user_id
       t.string    :make
-      t.string    :model
+      t.string    :bicycle_model
       t.integer   :size
       t.integer   :daily_cost
       t.timestamps

@@ -1,0 +1,16 @@
+<h1>Bicycles Index</h1>
+<ul>
+  <% @bicycles.each do |bicycle| %>
+    <li>
+      Bicycle ID: <%= bicycle.user_id %><br />
+      Make: <%= bicycle.make %><br />
+      Model: <%= bicycle.bicycle_model %><br />
+      Size: <%= bicycle.size %><br />
+      Cost per day: <%= bicycle.daily_cost %><br />
+      Properties: <%= bicycle.properties %><br />
+      Bicycle Type: <%= bicycle.biketype %><br />
+      Accessories: <%= bicycle.accessories %><br />
+      Description: <%= bicycle.description %><br />
+    </li>
+  <% end %>
+</ul>

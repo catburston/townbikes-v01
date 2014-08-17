@@ -1,0 +1,5 @@
+<div id="user_banner">
+  <%= "You are logged in as #{current_user.email_address}" %>
+  |
+  <%= link_to "Log Out", session_path("current"), method: "delete" %>
+</div>

@@ -11,17 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140814201927) do
+ActiveRecord::Schema.define(version: 20140817120506) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "hstore"
 
   create_table "bicycles", force: true do |t|
     t.integer  "user_id"
     t.string   "make"
-    t.string   "model"
+    t.string   "bicycle_model"
     t.integer  "size"
     t.integer  "daily_cost"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.hstore   "properties"
+    t.string   "biketype"
+    t.hstore   "accessories"
+    t.text     "description"
+  end
+
+  create_table "locations", force: true do |t|
+    t.string   "city"
+    t.string   "country"
+    t.string   "address"
+    t.string   "postcode"
+    t.integer  "bicycle_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -72,6 +87,8 @@ ActiveRecord::Schema.define(version: 20140814201927) do
     t.boolean  "confirmed",           default: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.hstore   "properties"
+    t.string   "session_token"
   end
 
 end

@@ -14,21 +14,21 @@ end
 BICYCLES = 50
 
 puts "Creating users ..."
-User.create!(username: "anna", email_address: "anna@example.com", location: "Paris", confirmed: true)
-User.create!(username: "bret", email_address: "bret@example.com", location: "Paris", confirmed: true)
-User.create!(username: "cara", email_address: "cara@example.com", location: "Berlin", confirmed: true)
-User.create!(username: "dora", email_address: "dora@example.com", location: "Melbourne", confirmed: true)
-User.create!(username: "eden", email_address: "eden@example.com", location: "Berlin", confirmed: true)
-User.create!(username: "fred", email_address: "fred@example.com", location: "Copenhagen", confirmed: true)
-User.create!(username: "greg", email_address: "greg@example.com", location: "Paris", confirmed: true)
-User.create!(username: "hugh", email_address: "hugh@example.com", location: "Copenhagen", confirmed: true)
-User.create!(username: "ivan", email_address: "ivan@example.com", location: "Berlin", confirmed: true)
-User.create!(username: "jane", email_address: "jane@example.com", location: "Paris", confirmed: true)
-User.create!(username: "kara", email_address: "kara@example.com", location: "Melbourne", confirmed: true)
-User.create!(username: "lana", email_address: "lana@example.com", location: "London", confirmed: true)
-User.create!(username: "mira", email_address: "mira@example.com", location: "Paris", confirmed: true)
-User.create!(username: "niam", email_address: "niam@example.com", location: "London", confirmed: true)
-User.create!(username: "owen", email_address: "owen@example.com", location: "Melbourne", confirmed: true)
+User.create!(username: "anna", email_address: "anna@example.com", password: "aaaa", location: "Paris", confirmed: true)
+User.create!(username: "bret", email_address: "bret@example.com", password: "aaaa", location: "Paris", confirmed: true)
+User.create!(username: "cara", email_address: "cara@example.com", password: "aaaa", location: "Berlin", confirmed: true)
+User.create!(username: "dora", email_address: "dora@example.com", password: "aaaa", location: "Melbourne", confirmed: true)
+User.create!(username: "eden", email_address: "eden@example.com", password: "aaaa", location: "Berlin", confirmed: true)
+User.create!(username: "fred", email_address: "fred@example.com", password: "aaaa", location: "Copenhagen", confirmed: true)
+User.create!(username: "greg", email_address: "greg@example.com", password: "aaaa", location: "Paris", confirmed: true)
+User.create!(username: "hugh", email_address: "hugh@example.com", password: "aaaa", location: "Copenhagen", confirmed: true)
+User.create!(username: "ivan", email_address: "ivan@example.com", password: "aaaa", location: "Berlin", confirmed: true)
+User.create!(username: "jane", email_address: "jane@example.com", password: "aaaa", location: "Paris", confirmed: true)
+User.create!(username: "kara", email_address: "kara@example.com", password: "aaaa", location: "Melbourne", confirmed: true)
+User.create!(username: "lana", email_address: "lana@example.com", password: "aaaa", location: "London", confirmed: true)
+User.create!(username: "mira", email_address: "mira@example.com", password: "aaaa", location: "Paris", confirmed: true)
+User.create!(username: "niam", email_address: "niam@example.com", password: "aaaa", location: "London", confirmed: true)
+User.create!(username: "owen", email_address: "owen@example.com", password: "aaaa", location: "Melbourne", confirmed: true)
 
 puts "Creating Bicycles ..."
 (1..BICYCLES).each do |index|

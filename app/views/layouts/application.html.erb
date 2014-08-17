@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Townbikes001</title>
+  <title>Townbikes v0.0.01</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <% if current_user %>
+    <%= render 'shared/session' %>
+  <% end %>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>

@@ -1,0 +1,31 @@
+<%= form_for(@bicycle) do |f| %>
+
+  <%= render 'shared/errors', model: @bicycle %>
+
+    <%= f.label :make %> <%= f.text_field :make %>
+    <br />
+
+    <%= f.label :bicycle_model %> <%= f.text_field :bicycle_model %>
+    <br />
+
+    <%= f.label :size %> <%= f.text_field :size %>
+    <br />
+
+    <%= f.label :daily_cost %> <%= f.text_field :daily_cost %>
+    <br />
+
+    <%= f.label :properties %> <%= f.text_field :properties %>
+    <br />
+
+    <%= f.label :biketype %> <%= f.text_field :biketype %>
+    <br />
+
+    <%= f.label :accessories %> <%= f.text_field :accessories %>
+    <br />
+
+    <%= f.label :description %> <%= f.text_field :description %>
+
+    <br />
+    <%= f.submit :Save %>
+
+<% end %>
